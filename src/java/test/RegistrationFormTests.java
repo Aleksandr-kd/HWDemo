@@ -72,7 +72,7 @@ public class RegistrationFormTests extends TestBase{
         $(".table-responsive").$(byText("Address")).parent().shouldHave(text(currentAddress));
         $(".table-responsive").$(byText("State and City")).parent().shouldHave(text(stateAndCity));
 
-        /* old results verifying варификация
+        /* old results verifying варификация+
         String tbody = "table tbody";
         $(tbody).$("tr", 0).$("td",1).shouldBe(text(fullName));
         $(tbody).$("tr", 1).$("td",1).shouldBe(text(userEmail));
